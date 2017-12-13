@@ -3,6 +3,7 @@ require 'minitest/pride'
 require './simon_says.rb'
 
 class TestSimonSays < MiniTest::Test
+
   def test_echo_hello
     assert_equal "hello", echo("hello")
   end
@@ -30,7 +31,7 @@ class TestSimonSays < MiniTest::Test
   def test_start_of_word_returns_first_two_letters
     assert_equal "Bo", start_of_word("Bob", 2)
   end
-  
+
   def test_first_word
     assert_equal "Hello", first_word("Hello World")
   end
